@@ -1,4 +1,4 @@
-##docker
+## docker
 
 docker images
 	//list of images to start a container from
@@ -22,7 +22,7 @@ docker exec -it mariadbtest bash
 	//access the container
 
 
-##docker-compose
+## docker-compose
 
 docker-compose pull
 	//pull necessary images

@@ -1,2 +1,3 @@
 # commands-markdown-tutorials
-#Docker
+
+List of essential commands for docker, git and linux.

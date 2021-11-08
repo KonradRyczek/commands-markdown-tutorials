@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dev-post-client-backend-db:
+    container_name: dev-post-client-backend-db
+    image: mariadb
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./data-volume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'dsa43G4DSg254G'
+      MYSQL_USER: 'dbmanager'
+      MYSQL_PASSWORD: 'dbmanager'
+      MYSQL_DATABASE: 'post-client-dev'
+    ports:
+      - '3307:3306'
+    restart: always
